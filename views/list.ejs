@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>City</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <%if (list.length >0){ %>
+            <% list.forEach(function(row){ %>
+
+                <tr>
+                    <td><%= row.fullname %></td>
+                    <td><%= row.email %></td>
+                    <td><%= row.mobile %></td>
+                    <td><%= row.city %></td>
+                  </tr>
+                  <% })}else{ %>
+                    <tr>
+                        <td colspan="6">No Record Found</td>
+                        
+                      </tr>
+                    <% } %>
+    </tbody>
+
+</table>
+
+
+</body>
+</html>
