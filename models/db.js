@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://MyUsername:MyPassword@mycluster-rkncu.mongodb.net/EmployeeDB?retryWrites=true&w=majority', 
+mongoose.connect('xxx', 
 {useNewUrlParser: true,useUnifiedTopology: true},
 
 ()=> console.log('Connected to MongoDB') );
